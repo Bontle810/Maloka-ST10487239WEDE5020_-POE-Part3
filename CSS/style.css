@@ -1,0 +1,414 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #fff8ef;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #3f3028;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #ffd1dc;
+    padding: 1rem 0;
+    border-bottom: 2px solid #f29ab0;
+}
+
+.nav-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.logo {
+    color: #8a2f4d;
+    text-decoration: none;
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #f05a7e;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+nav a {
+    color: #8a2f4d;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.35rem 0.5rem;
+}
+
+nav a:hover,
+nav a:focus {
+    color: #e83e68;
+    text-decoration: underline;
+}
+
+nav a:active {
+    color: #68243a;
+}
+
+.nav-check,
+.nav-button {
+    display: none;
+}
+
+.hero {
+    background-color: #fff0f5;
+    padding: 3rem 0;
+}
+
+.hero-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: center;
+}
+
+h1 {
+    font-size: 2.4rem;
+    line-height: 1.2;
+    color: #6b2d3f;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-size: 1.7rem;
+    color: #d94368;
+    margin-bottom: 0.8rem;
+}
+
+h3 {
+    font-size: 1.2rem;
+    color: #a33b58;
+    margin-bottom: 0.5rem;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+.lead {
+    font-size: 1.1rem;
+}
+
+.eyebrow {
+    color: #f05a7e;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+}
+
+.hero-image,
+.feature-image {
+    width: 100%;
+    height: auto;
+    border: 3px solid #f3a8b9;
+    border-radius: 10px;
+    display: block;
+}
+
+.hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    margin-top: 1.3rem;
+}
+
+.btn,
+.submit {
+    display: inline-block;
+    padding: 0.7rem 1rem;
+    border-radius: 6px;
+    border: 2px solid #d94368;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-primary,
+.submit {
+    background-color: #d94368;
+    color: white;
+}
+
+.btn-secondary {
+    background-color: white;
+    color: #d94368;
+}
+
+.btn:hover,
+.submit:hover {
+    background-color: #f05a7e;
+    color: white;
+}
+
+.btn:focus,
+.submit:focus,
+nav a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 3px solid #ff9f68;
+    outline-offset: 2px;
+}
+
+.section {
+    padding: 3rem 0;
+}
+
+.section-head {
+    margin-bottom: 1.5rem;
+}
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.2rem;
+}
+
+.card {
+    background-color: white;
+    border: 1px solid #f2b8c7;
+    border-radius: 8px;
+    padding: 1.3rem;
+    box-shadow: 0 3px 8px rgba(80, 45, 30, 0.08);
+}
+
+.card:hover {
+    border-color: #f05a7e;
+}
+
+.icon {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.info-box {
+    background-color: #ffe0e8;
+    border-left: 5px solid #f05a7e;
+    padding: 1.5rem;
+    border-radius: 6px;
+}
+
+.about-grid,
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: start;
+}
+
+.check-list {
+    margin: 1rem 0 0 1.3rem;
+}
+
+.check-list li {
+    margin-bottom: 0.5rem;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.2rem;
+}
+
+.gallery-card {
+    background: white;
+    border: 1px solid #f2b8c7;
+    padding: 0.7rem;
+    border-radius: 8px;
+}
+
+.gallery-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 5px;
+}
+
+figcaption {
+    padding: 0.7rem 0.2rem 0.2rem;
+    font-weight: bold;
+}
+
+form {
+    background: white;
+    border: 1px solid #f2b8c7;
+    padding: 1.4rem;
+    border-radius: 8px;
+}
+
+form div {
+    margin-bottom: 1rem;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.3rem;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 0.7rem;
+    border: 1px solid #d99aaa;
+    border-radius: 5px;
+    font: inherit;
+}
+
+textarea {
+    min-height: 130px;
+    resize: vertical;
+}
+
+.price-list {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+}
+
+.price-list th,
+.price-list td {
+    border: 1px solid #edb3c2;
+    padding: 0.8rem;
+    text-align: left;
+}
+
+.price-list th {
+    background-color: #ffd1dc;
+}
+
+footer {
+    background-color: #6b2d3f;
+    color: white;
+    padding: 2rem 0;
+    margin-top: 2rem;
+}
+
+footer h3,
+footer a {
+    color: #ffd5e0;
+}
+
+footer p {
+    color: #ffe8ee;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.small {
+    font-size: 0.9rem;
+}
+
+.skip-link {
+    position: absolute;
+    left: -9999px;
+}
+
+.skip-link:focus {
+    left: 10px;
+    top: 10px;
+    background: white;
+    padding: 0.5rem;
+    z-index: 10;
+}
+
+@media (max-width: 800px) {
+    .hero-grid,
+    .about-grid,
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .grid-3 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.9rem;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+    }
+
+    .hero {
+        padding: 2rem 0;
+    }
+
+    .grid-3,
+    .gallery-grid,
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.4rem;
+    }
+
+    .hero-actions {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+
+/* Part 3: interactive features, form feedback, accessibility and SEO support */
+html { scroll-behavior: smooth; }
+:focus-visible { outline: 3px solid #d982a0; outline-offset: 3px; }
+.card, .gallery-card, .info-box { transition: transform .2s ease, box-shadow .2s ease; }
+.card:hover, .gallery-card:hover { transform: translateY(-3px); box-shadow: 0 10px 24px rgba(55, 20, 35, .12); }
+.filter-tools, .gallery-tools { max-width: 620px; margin: 1.2rem 0 1.5rem; }
+.filter-tools input, .gallery-tools select { margin-top: .4rem; }
+.field-error { display: block; min-height: 1.1rem; color: #a51d38; font-weight: 600; }
+input[aria-invalid="true"], select[aria-invalid="true"], textarea[aria-invalid="true"] { border-color: #a51d38; box-shadow: 0 0 0 2px rgba(165,29,56,.12); }
+.form-status { margin-top: 1rem; padding: .85rem 1rem; border-radius: 8px; background: #fff0f4; color: #642039; }
+.map-frame { width: 100%; height: 350px; border: 1px solid #e3c6d1; border-radius: 14px; overflow: hidden; }
+.map-frame iframe { width: 100%; height: 100%; border: 0; }
+.faq-list details { background: #fff; border: 1px solid #ead5de; border-radius: 10px; padding: 1rem 1.2rem; margin: .7rem 0; }
+.faq-list summary { font-weight: 700; cursor: pointer; color: #7b2948; }
+.faq-list details p { margin-bottom: 0; }
+.lightbox-trigger { display: block; width: 100%; padding: 0; border: 0; background: transparent; cursor: zoom-in; }
+.lightbox-trigger img { display: block; width: 100%; height: auto; border-radius: 12px; }
+.lightbox { width: min(92vw, 850px); max-width: 850px; border: 0; border-radius: 14px; padding: 1rem; box-shadow: 0 20px 80px rgba(0,0,0,.4); }
+.lightbox::backdrop { background: rgba(30, 10, 20, .78); }
+.lightbox img { display: block; max-width: 100%; max-height: 72vh; margin: auto; }
+.lightbox p { text-align: center; font-weight: 600; }
+.lightbox-close { display: block; margin-left: auto; border: 0; background: #7b2948; color: #fff; border-radius: 50%; width: 2.4rem; height: 2.4rem; font-size: 1.5rem; cursor: pointer; }
+[hidden] { display: none !important; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; } }
+@media (max-width: 600px) { .map-frame { height: 270px; } .lightbox { padding: .6rem; } }
